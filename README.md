@@ -3,7 +3,7 @@ Using DLL injection to recover encoded credentials
 
 ![alt text](https://github.com/billchaison/BorgDLL/raw/main/ue99.png)
 
-This example shows how to compile a Windows DLL and inject it using x32dbg into UltraEdit-32 verion 11.10b in order to expose the plaintext password from the encoded string stored in the UEStudio.INI file.  This scenario is useful when you have obtained a target's INI file and you wish to recover the plaintext FTP and SFTP/SSH credentials from memory, rather than throw them at a honeypot.  The password encoding scheme is a complex propritary obfuscation algorithm, so rather than port the algorithm to a scripting language, you can use this technique to turn your own installation of UltraEdit-32 into a personal decoder ring.  This example takes the UEStudio.INI file and loads it under the application installed on a Windows 7 Pro 32-bit VM.
+This example shows how to compile a Windows DLL and inject it using x32dbg into UltraEdit-32 verion 11.10b in order to expose the plaintext password from the encoded strings stored in the UEStudio.INI file.  This scenario is useful when you have obtained a target's INI file and you wish to recover the plaintext FTP and SFTP/SSH credentials from memory, rather than throw them at a honeypot.  The password encoding scheme is a complex proprietary obfuscation algorithm, so rather than port the algorithm to a scripting language, you can use this technique to turn your own installation of UltraEdit-32 into a personal decoder ring.  This example takes the UEStudio.INI file and loads it under the application installed on a Windows 7 Pro 32-bit VM.
 
 The binaries that were reverse engineered for this demonstration are:<br />
 ```
